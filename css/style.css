@@ -31,7 +31,7 @@ p {
 }
 
 /* BACKGROUND */
-.bg-1 {
+.bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,18 +43,19 @@ p {
     z-index: 0;
 }
 
-.bg-1 img {
+.bg-1 {
     width: 888px;
     height: 640px;
+    background: url("../img/desktop/image-host.jpg");
+    position: relative;
 }
 
 .bg-2 {
     width: 232px;
     height: 104px;
-    background: url("../img/desktop/bg-pattern-dots.svg") center center / cover;
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: 100px;
+    bottom: -50px;
 }
 
 /* HEADER */
@@ -69,7 +70,9 @@ main {
     height: 600px;
     padding: 50px 0 0 165px;
     z-index: 10;
-    position: relative;
+    position: absolute;
+    top: 261px;
+
 }
 
 .container {
