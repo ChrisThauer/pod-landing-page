@@ -14,11 +14,13 @@
       <img src="img/desktop/logo.svg" alt="logo">
     </a>
   </header>
+
   <div class="bg">
     <div class="bg-1">
       <img src="img/desktop/bg-pattern-dots.svg" class="bg-2" alt="">
     </div>
   </div>
+
   <main>
     <div class="container">
       <h1>
@@ -30,8 +32,9 @@
         and more!
       </p>
       <form>
-        <input type="email" placeholder="Email address">
-        <button type="submit">Request Access</button>
+        <input type="email" placeholder="Email address" required>
+        <p class="validation hidden">Oops! Please check your email</p>
+        <button type="submit" id="submit">Request Access</button>
       </form>
       <div class="icon-bar">
         <img src="img/desktop/spotify.svg" alt="">
@@ -41,5 +44,7 @@
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

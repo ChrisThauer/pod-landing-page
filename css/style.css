@@ -116,6 +116,23 @@ button {
     bottom: 5px;
     right: 277px;
     cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #B3FFE2;
+}
+
+form p.validation {
+    color: #FB3E3E;
+    font-size: 12px;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+.hidden {
+    display: none;
 }
 
 .icon-bar {
