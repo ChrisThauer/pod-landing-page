@@ -17,6 +17,7 @@ h1 {
     font-weight: 300;
     line-height: 62px;
     color: #54E6AF;
+    text-transform: uppercase;
 }
 
 h1 span {
@@ -72,7 +73,6 @@ main {
     z-index: 10;
     position: absolute;
     top: 261px;
-
 }
 
 .container {
@@ -145,4 +145,126 @@ form p.validation {
 .icon-bar img {
     opacity: 0.5;
     height: 24px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1240px) {
+    header {
+        padding-top: 50px;
+    }
+
+    .bg {
+        align-items: flex-start;
+    }
+
+    .bg-1 {
+        background: url("../img/tablet/image-host.jpg") center center / cover;
+        width: 490px;
+    }
+}
+
+@media (max-width: 1068px) {
+    header {
+        padding-left: 39px;
+    }
+
+    main {
+        padding-left: 39px;
+        top: 171px;
+    }
+
+    .bg .bg-1 img.bg-2 {
+        position: fixed;
+        bottom: 0;
+        left: 30px;
+    }
+}
+
+@media (max-width: 745px) {
+    header {
+        padding: 0;
+        width: 100%;
+        height: 175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header a img {
+        transform: scale(1.3);
+    }
+
+    .bg .bg-1 img.bg-2 {
+        display: none;
+    }
+
+    .bg-1 {
+        background: url("../img/mobile/image-host.jpg") center center / cover;
+        width: 100%;
+        height: 100%;
+        opacity: .125;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 20px;
+        top: 60px;
+    }
+
+    main .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+
+    .container p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .container form input {
+        width: 100%;
+    }
+
+    .container .icon-bar {
+        width: 100%;
+    }
+
+    .container .icon-bar img {
+        height: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        order: 2;
+    }
+
+    form button {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    form p.validation {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0;
+    }
 }
